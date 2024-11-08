@@ -1,3 +1,12 @@
+def dummy_llm(content: str) -> str:
+    '''
+    This is a dummy function that represents the LLM to mock in test/unit/test_translator.py
+    since checkpt #2 for P4 does not include our LLM implementation yet and only hardcoded
+    translations
+    '''
+    return content
+
+
 def translate_content(content: str) -> tuple[bool, str]:
     if content == "这是一条中文消息":
         return False, "This is a Chinese message"
