@@ -62,6 +62,12 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
+      - name: Install PIP
+        run: python -m pip install --upgrade pip
+      
+      - name: Install open ai
+        run: !pip install --quiet openai
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
