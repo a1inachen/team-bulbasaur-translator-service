@@ -39,7 +39,15 @@ jobs:
 
       - name: Install PIP
         run: python -m pip install --upgrade pip
-      
+
+      - name: install python dotenv
+        run: pip install python-dotenv
+
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo API_KEY=${{ secrets.AZURE_OPENAI_API_KEY }} >> .env
+
       - name: Install open ai
         run: pip install --quiet openai
 
