@@ -34,7 +34,7 @@ jobs:
         run: python -m pip install --upgrade pip
       
       - name: Install open ai
-        run: !pip install --quiet openai
+        run: pip install --quiet openai
 
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Zip artifact for deployment
