@@ -43,6 +43,9 @@ jobs:
       - name: Install open ai
         run: pip install --quiet openai
 
+      - name: install sentence transformer
+        run: pip install sentence_transformers --quiet
+
       - name: Install virtualenv
         run: pip install virtualenv
 
