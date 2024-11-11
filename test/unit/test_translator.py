@@ -4,6 +4,8 @@
 # from sentence_transformers import SentenceTransformer, util
 # model = SentenceTransformer('all-MiniLM-L6-v2')
 
+def test_test():
+    assert True
 
 
 # def eval_single_response_translation(expected_answer: str, llm_response: str) -> float:
