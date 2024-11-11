@@ -3,9 +3,19 @@
 # from src.translator import translate_content
 # from sentence_transformers import SentenceTransformer, util
 # model = SentenceTransformer('all-MiniLM-L6-v2')
+from src.translator import translate_content
 
-def test_test():
-    assert True
+
+def test_chinese():
+    is_english, translated_content = translate_content("这是一条中文消息")
+    assert is_english == False
+    assert translated_content == "This is a Chinese message"
+
+def test_llm_normal_response():
+    pass
+
+def test_llm_gibberish_response():
+    pass
 
 
 # def eval_single_response_translation(expected_answer: str, llm_response: str) -> float:

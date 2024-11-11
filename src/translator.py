@@ -1,11 +1,11 @@
-from openai import AzureOpenAI
-import string
-import os
-from dotenv import load_dotenv
+# from openai import AzureOpenAI
+# import string
+# import os
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
-API_KEY = os.getenv("API_KEY")
+# API_KEY = os.getenv("API_KEY")
 
 # client = AzureOpenAI (
 #         api_key = API_KEY,
